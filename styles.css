@@ -190,3 +190,29 @@ nav a:hover{ background: #ffe9e9; color: #111; }
   .grid--programs,
   .grid--pricing{ grid-template-columns: 1fr; }
 }
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-image {
+  flex: 1 1 400px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-1);
+}
+
+
+
+.link{
+  text-decoration: none;
+}
