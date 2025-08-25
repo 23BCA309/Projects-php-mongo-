@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunrise Yoga</title>
+  <meta name="description" content="A bright, colorful yoga site: classes, programs, teachers, and pricing. Pure HTML + CSS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Sunrise Yoga home">
+        <span class="sun"></span>
+        <span>Sunrise<span class="accent">Yoga</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="classes.html">Classes</a>
+        <a href="#programs">Programs</a>
+        <a href="#teachers">Teachers</a>
+        <a href="">About us</a>
+        <a href="">shop</a>
+        <a href="#pricing" class="btn btn--pill">Start Free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Feel-good yoga for bright days ☀️</h1>
+          <p>Quick morning energizers, cozy stretch breaks, and calming breath—designed to make you smile.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="#pricing">Start 7-day free trial</a>
+            <a class="btn btn--ghost" href="#classes">Browse classes</a>
+          </div>
+          <div class="badges">
+            <span class="badge">Beginner-friendly</span>
+            <span class="badge">No props needed</span>
+            <span class="badge">10-40 min</span>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="blob b1"></div>
+          <div class="blob b2"></div>
+          <div class="blob b3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes -->
+    <section id="classes" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Popular classes</h2>
+          <p class="muted">Bright, upbeat sessions to match your mood.</p>
+        </header>
+
+        <div class="grid grid--cards">
+          <article class="card">
+            <div class="thumb t1"><span class="chip chip--pink">Morning</span></div>
+            <div class="card__body">
+              <h3>Sunrise Flow</h3>
+              <p>Wake up gently with juicy stretches and light heat.</p>
+              <p class="meta">20 min • All levels</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb t2"><span class="chip chip--orange">Energy</span></div>
+            <div class="card__body">
+              <h3>Happy Power</h3>
+              <p>Playful vinyasa with bright beats and smiles.</p>
+              <p class="meta">30 min • Intensity 3/5</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb t3"><span class="chip chip--teal">Calm</span></div>
+            <div class="card__body">
+              <h3>Cozy Stretch</h3>
+              <p>Release hips, hamstrings, and neck tension.</p>
+              <p class="meta">25 min • All levels</p>
+            </div>
+          </article>
+
+          <!-- <article class="card">
+            <div class="thumb t4"><span class="chip chip--purple">Focus</span></div>
+            <div class="card__body">
+              <h3>Core Glow</h3>
+              <p>Fun core work to stabilize and brighten posture.</p>
+              <p class="meta">18 min • No props</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb t5"><span class="chip chip--yellow">Gentle</span></div>
+            <div class="card__body">
+              <h3>Evening Melt</h3>
+              <p>Slow, soothing flow to wind down your day.</p>
+              <p class="meta">22 min • Low intensity</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb t6"><span class="chip chip--blue">Breathe</span></div>
+            <div class="card__body">
+              <h3>Colorful Breath</h3>
+              <p>Guided pranayama to balance and brighten.</p>
+              <p class="meta">12 min • Seated</p>
+            </div>
+          </article> -->
+          <!-- <h1>there are more to click on classes</h1> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Feel-good programs</h2>
+          <p class="muted">Short plans to build a habit—no pressure, all sunshine.</p>
+        </header>
+        <div class="grid grid--programs">
+          <div class="program">
+            <h3>7-Day Morning Spark</h3>
+            <ul>
+              <li>Under 20 minutes</li>
+              <li>Gentle energizers</li>
+              <li>Stretch + breath</li>
+            </ul>
+          </div>
+          <div class="program">
+            <h3>14-Day Joyful Flow</h3>
+            <ul>
+              <li>Playful vinyasa</li>
+              <li>Core + balance</li>
+              <li>Rest days included</li>
+            </ul>
+          </div>
+          <div class="program">
+            <h3>10-Day Unwind</h3>
+            <ul>
+              <li>Slow stretches</li>
+              <li>Neck & back care</li>
+              <li>Better sleep</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers -->
+    <section id="teachers" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Meet the teachers</h2>
+          <p class="muted">Friendly humans with bright cues and kind energy.</p>
+        </header>
+        <div class="grid grid--teachers">
+          <figure class="teacher">
+            <div class="avatar a1" aria-hidden="true"></div>
+            <figcaption>
+              <h3>Asha Rao</h3>
+              <p class="muted">Grounded, sunny guidance</p>
+            </figcaption>
+          </figure>
+          <figure class="teacher">
+            <div class="avatar a2" aria-hidden="true"></div>
+            <figcaption>
+              <h3>Milan Gupta</h3>
+              <p class="muted">Playful strength</p>
+            </figcaption>
+          </figure>
+          <figure class="teacher">
+            <div class="avatar a3" aria-hidden="true"></div>
+            <figcaption>
+              <h3>Sara Menon</h3>
+              <p class="muted">Soft, restorative focus</p>
+            </figcaption>
+          </figure>
+          <figure class="teacher">
+            <div class="avatar a4" aria-hidden="true"></div>
+            <figcaption>
+              <h3>Jonas Pillai</h3>
+              <p class="muted">Core + balance</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Simple, sunny pricing</h2>
+          <p class="muted">Try it free. Cancel anytime.</p>
+        </header>
+        <div class="grid grid--pricing">
+          <div class="plan">
+            <h3>Monthly</h3>
+            <p class="price">₹499 <span class="u-sub">/mo</span></p>
+            <ul>
+              <li>Unlimited classes</li>
+              <li>Programs & series</li>
+              <li>Any device</li>
+            </ul>
+            <a href="#pricing" class="btn btn--outline">Pick Monthly</a>
+          </div>
+          <div class="plan plan--featured">
+            <h3>Yearly <span class="tag">Best value</span></h3>
+            <p class="price">₹4,499 <span class="u-sub">/yr</span></p>
+            <ul>
+              <li>2 months free</li>
+              <li>Download for offline*</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#pricing" class="btn btn--primary">Pick Yearly</a>
+          </div>
+          <div class="plan">
+            <h3>Gift</h3>
+            <p class="price">₹1,499 <span class="u-sub">/3 mo</span></p>
+            <ul>
+              <li>Perfect present</li>
+              <li>One-time payment</li>
+              <li>No auto-renew</li>
+            </ul>
+            <a href="#pricing" class="btn btn--outline">Give a Gift</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sunrise Yoga. Made with good vibes.</p>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#programs">Programs</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
