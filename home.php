@@ -19,11 +19,11 @@
         <span>Sunrise<span class="accent">Yoga</span></span>
       </a>
       <nav aria-label="Primary">
-        <a href="classes.php">Classes</a>
+        <!-- <a href="classes.php">Classes</a> -->
         <a href="program.php">Programs</a>
         <a href="teachers.php">Teachers</a>
         <a href="about_us.php">About us</a>
-        <a href="shop.php">shop</a>
+        <!-- <a href="shop.php">shop</a> -->
         <!-- <a href="#pricing" class="btn btn--pill">Start Free</a> -->
       </nav>
     </div>
@@ -55,51 +55,7 @@
     </section>
 
     <!-- Classes -->
-    <section id="classes" class="section">
-      <div class="container">
-        <header class="section__head">
-          <h2>Popular classes</h2>
-          <p class="muted">Bright, upbeat sessions to match your mood.</p>
-        </header>
-
-        <div class="grid grid--cards">
-          <article class="card">
-            <div class="thumb t1"><span class="chip chip--pink">Morning</span></div>
-            <div class="card__body">
-              <h3>Sunrise Flow</h3>
-              <p>Wake up gently with juicy stretches and light heat.</p>
-              <p class="meta">20 min • All levels</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb t2"><span class="chip chip--orange">Energy</span></div>
-            <div class="card__body">
-              <h3>Happy Power</h3>
-              <p>Playful vinyasa with bright beats and smiles.</p>
-              <p class="meta">30 min • Intensity 3/5</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb t3"><span class="chip chip--teal">Calm</span></div>
-            <div class="card__body">
-              <h3>Cozy Stretch</h3>
-              <p>Release hips, hamstrings, and neck tension.</p>
-              <p class="meta">25 min • All levels</p>
-            </div>
-          </article>
-
-          <header class="section__head">
-            <!-- <h2>Classes</h3> -->
-            <p class="muted">you need more classes videos then click hear <a class="link" href="classes.php">Classes</a></p>
-          </header>
-
-          
-          <!-- <h1>there are more to click on classes</h1> -->
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Programs -->
     <section id="programs" class="section section--alt">
@@ -200,7 +156,7 @@
       <p>© 2025 Sunrise Yoga. Made with good vibes.</p>
       <nav class="foot-links" aria-label="Footer">
         <a href="home.php">Home</a>
-        <a href="classes.php">Classes</a>
+        <!-- <a href="classes.php">Classes</a> -->
         <a href="program.php">Programs</a>
         <a href="teachers.php">Teachers</a>
         <a href="about_us.php">About Us</a>

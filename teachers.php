@@ -19,11 +19,11 @@
         <span>Sunrise<span class="accent">Yoga</span></span>
       </a>
       <nav aria-label="Primary">
-        <a href="classes.php">Classes</a>
+        <!-- <a href="classes.php">Classes</a> -->
         <a href="program.php">Programs</a>
         <a href="teachers.php">Teachers</a>
         <a href="about_us.php">About us</a>
-        <a href="shop.php">shop</a>
+        <!-- <a href="shop.php">shop</a> -->
         <!-- <a href="#pricing" class="btn btn--pill">Start Free</a> -->
       </nav>
     </div>
@@ -140,7 +140,7 @@
       <p>© 2025 Sunrise Yoga. Made with good vibes.</p>
       <nav class="foot-links" aria-label="Footer">
         <a href="home.php">Home</a>
-        <a href="classes.php">Classes</a>
+        <!-- <a href="classes.php">Classes</a> -->
         <a href="program.php">Programs</a>
         <a href="teachers.php">Teachers</a>
         <a href="about_us.php">About Us</a>
