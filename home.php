@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sunrise Yoga</title>
-  <meta name="description" content="A bright, colorful yoga site: classes, programs, teachers, and pricing. Pure HTML + CSS." />
+  <meta name="description" content="A bright, colorful yoga site: programs, teachers, and pricing. Pure HTML + CSS." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
           <p>Quick morning energizers, cozy stretch breaks, and calming breath—designed to make you smile.</p>
           <div class="cta-row">
             <a class="btn btn--primary" href="about_us.php">Start 7-day free trial</a>
-            <a class="btn btn--ghost" href="classes.php">Browse classes</a>
+            <a class="btn btn--ghost" href="program.php">Browse Program</a>
           </div>
           <div class="badges">
             <span class="badge">Beginner-friendly</span>

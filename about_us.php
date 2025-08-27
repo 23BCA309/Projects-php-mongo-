@@ -94,7 +94,7 @@
             <h3>Monthly</h3>
             <p class="price">₹499 <span class="u-sub">/mo</span></p>
             <ul>
-              <li>Unlimited classes</li>
+              <!-- <li>Unlimited classes</li> -->
               <li>Programs & series</li>
               <li>Any device</li>
             </ul>
@@ -134,7 +134,7 @@
       <p>© 2025 Sunrise Yoga. Made with good vibes.</p>
       <nav class="foot-links" aria-label="Footer">
         <a href="home.php">Home</a>
-        <a href="classes.php">Classes</a>
+        <!-- <a href="classes.php">Classes</a> -->
         <a href="program.php">Programs</a>
         <a href="teachers.php">Teachers</a>
         <a href="about_us.php">About Us</a>
