@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Sunrise Yoga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="home.php" aria-label="Sunrise Yoga home">
+        <span class="sun"></span>
+        <span>Sunrise<span class="accent">Yoga</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="classes.php">Classes</a>
+        <a href="program.php">Programs</a>
+        <a href="teachers.php">Teachers</a>
+        <a href="about_us.php">About us</a>
+        <a href="shop.php">shop</a>
+        <!-- <a href="#pricing" class="btn btn--pill">Start Free</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Shop Section -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Yoga Shop 🛍️</h2>
+          <p class="muted">Bright essentials to support your practice.</p>
+        </header>
+
+        <div class="grid grid--cards">
+          <!-- Product 1 -->
+          <article class="card">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="card__body">
+              <h3>Eco Yoga Mat</h3>
+              <p>Non-slip, eco-friendly mat with bright design.</p>
+              <p class="price">₹1,299</p>
+              <a href="#" class="btn btn--outline">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="card">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1615486368173-8c624c5187e3?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="card__body">
+              <h3>Yoga Blocks (Set of 2)</h3>
+              <p>Support balance and flexibility with colorful foam blocks.</p>
+              <p class="price">₹699</p>
+              <a href="#" class="btn btn--outline">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="card">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1599058917488-6f1e873ddc95?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="card__body">
+              <h3>Yoga Strap</h3>
+              <p>Bright cotton strap to deepen stretches safely.</p>
+              <p class="price">₹399</p>
+              <a href="#" class="btn btn--outline">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="card">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1553524819-1278d4b8d8b5?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="card__body">
+              <h3>Meditation Cushion</h3>
+              <p>Comfortable, supportive cushion for calm sessions.</p>
+              <p class="price">₹899</p>
+              <a href="#" class="btn btn--outline">Add to Cart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sunrise Yoga. Made with good vibes.</p>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="home.php">Home</a>
+        <a href="classes.php">Classes</a>
+        <a href="program.php">Programs</a>
+        <a href="teachers.php">Teachers</a>
+        <a href="about_us.php">About Us</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
