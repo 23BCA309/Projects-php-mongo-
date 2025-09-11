@@ -43,7 +43,7 @@
     <section class="section section--alt" id="free-programs">
     <div class="container">
       <div class="section__head">
-        <h2>Free Programs</h2>
+        <h2>Free Programs <span><a href="#"><img src="plus.png" width="25px" height="25px" alt=""></a></span></h2>
         <p class="muted">Try these beginner-friendly yoga programs at no cost</p>
       </div>
       <div class="grid grid--programs">
@@ -63,7 +63,7 @@
    <section class="section" id="paid-programs">
     <div class="container">
       <div class="section__head">
-        <h2>Paid Programs</h2>
+        <h2>Paid Programs <span><a href="#"><img src="plus.png" width="25px" height="25px" alt=""></a></span></h2>
         <p class="muted">Transform your body and mind with our premium courses</p>
       </div>
       <div class="grid grid--programs">
@@ -83,8 +83,8 @@
     <section id="programs" class="section section--alt">
       <div class="container">
         <header class="section__head">
-          <h2>Feel-good programs</h2>
-          <p class="muted">Short plans to build a habit—no pressure, all sunshine.</p>
+          <h2>Feel-good programs <span><a href="#"><img src="plus.png" width="25px" height="25px" alt=""></a></span></h2>
+          <p class="muted">Short plans to build a habit—no pressure, all sunshine. </p>
         </header>
         <div class="grid grid--programs">
           <div class="program">
@@ -112,11 +112,7 @@
             </ul>
           </div>
 
-          <header class="section__head">
-          <!-- <h2>programs</h2> -->
-          <p class="muted">you need more habit program then click hear <a class="link" href="program.php">Program</a></p>
-        </header>
-
+          
         </div>
       </div>
     </section>
@@ -127,10 +123,10 @@
     <section id="teachers" class="section">
       <div class="container">
         <header class="section__head">
-          <h2>Meet the teachers</h2>
+          <h2>Meet the teachers <span><a href="#"><img src="plus.png" width="25px" height="25px" alt=""></a></span></h2>
           <p class="muted">Friendly humans with bright cues and kind energy.</p>
         </header>
-        <div class="grid grid--teachers">
+        <div class="grid grid--teachers">k
           <figure class="teacher">
             <div class="avatar a1" aria-hidden="true"></div>
             <figcaption>
