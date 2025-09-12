@@ -72,16 +72,17 @@ function createErrorElement(fieldId) {
     const errorElement = document.createElement('div');
     errorElement.id = `${fieldId}-error`;
     errorElement.className = 'error-message';
-    errorElement.style.color = 'red';
-    errorElement.style.fontSize = '0.8rem';
-    errorElement.style.marginTop = '5px';
 
-    // Insert error message after the input field
-   const inputGroup = field.closest('.input-group');
+    // Insert error message in the appropriate container
+    const inputGroup = field.closest('.input-group');
+    const termsContainer = field.closest('.terms');
+    
     if (inputGroup) {
         inputGroup.appendChild(errorElement);
+    } else if (termsContainer) {
+        termsContainer.appendChild(errorElement);
     } else {
-        field.parentNode.insertBefore(errorElement, field.nextSibling);
+        field.parentNode.appendChild(errorElement);
     }
 
     return errorElement;
@@ -119,14 +120,13 @@ function simulateLogin(email, password) {
     }, 1500);
 }
 
-
-
 function submitRegister(event) {
     event.preventDefault();
 
     // Get form values
     const name = document.getElementById('register-name').value.trim();
     const email = document.getElementById('register-email').value.trim();
+    const role = document.getElementById('register-role').value; // Added role field
     const password = document.getElementById('register-password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
     const termsChecked = document.getElementById('terms').checked;
@@ -147,6 +147,12 @@ function submitRegister(event) {
         isValid = false;
     } else if (!isValidEmail(email)) {
         showError('register-email', 'Please enter a valid email address');
+        isValid = false;
+    }
+
+    // Role validation
+    if (!role) {
+        showError('register-role', 'Please select a role');
         isValid = false;
     }
 
@@ -177,7 +183,7 @@ function submitRegister(event) {
 
     if (isValid) {
         // Proceed with registration (API call or form submit)
-        console.log('Registration data:', { name, email, password });
+        console.log('Registration data:', { name, email, role, password });
         // Simulate registration success
         window.location.href = "home.php";
         // Optionally redirect or reset form
