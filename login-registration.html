@@ -114,13 +114,15 @@
             </div>
 
             <div class="input-group">
-              <i class="fas fa-user-tag"></i>
-              <select id="register-role" name="new_role">
-                <option value="" disabled selected>Select your role</option>
-                <option value="user">User</option>
-                <option value="teacher">Teacher</option>
-                <option value="admin">Admin</option>
-              </select>
+                <i class="fas fa-user-tag"></i>
+                <div id="dropdown">
+                    <div id="selected" data-value="">Select Role</div>
+                    <div class="options">
+                        <div class="option" data-value="user" >User</div>
+                        <div class="line"></div>
+                        <div class="option" data-value="teacher" >Teacher</div>
+                    </div>
+                </div>
             </div>
 
             <div class="input-group">
@@ -170,6 +172,26 @@
   </div>
 
   <script>
+    // dropdown code
+    selected=document.getElementById('selected');
+    options=document.querySelector('.options');
+    options_list=document.querySelectorAll('.option');
+    
+    // show and hide the dropdownlist
+    selected.addEventListener('click',()=>{
+        options.style.display = options.style.display==='block'? 'none':'block';
+    });
+
+    // set the selected option
+    options_list.forEach( option => {
+        option.addEventListener('click',()=>{ 
+            selected.innerHTML = option.innerHTML;
+            selected.setAttribute('data-value',option.getAttribute('data-value'));
+            options.style.display ='none';
+        
+        });
+    });
+
     // Forgot modal controls
     function openForgot() {
       document.getElementById('forgotModal').style.display = 'flex';

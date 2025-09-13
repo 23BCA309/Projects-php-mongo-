@@ -54,10 +54,10 @@ function isValidEmail(email) {
 }
 
 // Helper function to show error messages
-function showError(fieldId, message) {
+function showError(fieldId, message) { 
     const field = document.getElementById(fieldId);
     const errorElement = document.getElementById(`${fieldId}-error`) || createErrorElement(fieldId);
-
+    
     // Add error class to input field
     field.classList.add('error');
 
@@ -126,7 +126,7 @@ function submitRegister(event) {
     // Get form values
     const name = document.getElementById('register-name').value.trim();
     const email = document.getElementById('register-email').value.trim();
-    const role = document.getElementById('register-role').value; // Added role field
+    const role = document.getElementById('selected').getAttribute('data-value');// Added role field
     const password = document.getElementById('register-password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
     const termsChecked = document.getElementById('terms').checked;
@@ -152,7 +152,7 @@ function submitRegister(event) {
 
     // Role validation
     if (!role) {
-        showError('register-role', 'Please select a role');
+        showError('dropdown', 'Please select a role');
         isValid = false;
     }
 

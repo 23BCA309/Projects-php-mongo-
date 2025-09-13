@@ -41,6 +41,7 @@ a {
     color: red;
     font-size: 0.8rem;
     margin-top: 5px;
+    display: block;
 }
 
 /* Outer container */
@@ -210,8 +211,8 @@ p.subheading {
     z-index: 2;
 }
 
-.input-group input,
-.input-group select {
+.input-group input,.input-group #dropdown
+{
     width: 100%;
     padding: 9px 16px 9px 46px;
     border-radius: 50px;
@@ -223,38 +224,45 @@ p.subheading {
     outline: none;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* Special styling for select dropdown */
-.input-group select {
+.options{
+    position: absolute;
+    display: none;
+    z-index: 10;
+    left:30px;
+    background-color: var(--input-bg);
+    width: 92%;
     cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8c9b6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    background-size: 16px;
-    padding-right: 46px;
+    border-radius: 16px;
+    border-top: none;
+}
+.option{
+    padding:10px 16px;
+    border: none;
 }
 
-/* Style the select options */
-.input-group select option {
-    background: var(--card);
-    color: #26322a;
-    padding: 10px;
+.line{
+    width:100%;
+    height: 1px;
+    border: 1px solid #d5ddd6;
+}
+.selected::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat center;
+  background-size: contain;
+  transform: translateY(-50%);
 }
 
-.input-group select option[disabled] {
-    color: #97a595;
-}
-
-.input-group input::placeholder {
+.input-group input,.input-group #dropdown::placeholder {
     color: #97a595;
     opacity: 1
 }
 
-.input-group input:focus,
-.input-group select:focus {
+.input-group input:focus {
     border-color: #FFD69B;
     box-shadow: 0 6px 20px rgba(255, 166, 80, 0.08);
     background: #fff
