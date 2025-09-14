@@ -121,7 +121,7 @@ function simulateLogin(email, password) {
 }
 
 function submitRegister(event) {
-    event.preventDefault();
+    console.log('submitRegister called');
 
     // Get form values
     const name = document.getElementById('register-name').value.trim();
@@ -181,13 +181,12 @@ function submitRegister(event) {
         isValid = false;
     }
 
-    if (isValid) {
-        // Proceed with registration (API call or form submit)
-        console.log('Registration data:', { name, email, role, password });
-        // Simulate registration success
-        window.location.href = "home.php";
-        // Optionally redirect or reset form
+   if(isValid){
+        return isValid;
     }
-
-    return isValid;
+    else{
+        alert("Please fix the errors before submitting.");
+        event.preventDefault();
+        return false;
+    }
 }
