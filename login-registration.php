@@ -1,16 +1,38 @@
 <?php
+
   include'connect.php';
   
   if(isset($_POST['createbtn']) && $_SERVER['REQUEST_METHOD']=="POST"){
-    $username=$_POST['new_name'];
-    $email=$_POST['new_email'];
-    $role=$_POST['new_role'];
-    $password=password_hash($_POST['new_password'], PASSWORD_DEFAULT);
-    $cnfpassword=$_POST['new_cnfpassword'];
+    $username=trim($_POST['new_name']);
+    $email=trim($_POST['new_email']);
+    $role=trim($_POST['new_role']);
+    $password=trim(password_hash($_POST['new_password'], PASSWORD_DEFAULT));
+    $cnfpassword=trim($_POST['new_cnfpassword']);
+    
+    if(empty($role) || empty($username) || empty($email) || empty($password) || empty($cnfpassword)  ){
+      echo"";
+      exit();
+    }
+    
+    if($password !== $cnfpassword){
+      echo"<script>
+            showError(confirm-password,'Password MisMatch');
+          </script>";
+      exit();
+    }
 
-    $query="INSERT INTO users_tbl (username, email, role, password) VALUES('$username','$email','$role','$password')";
+    if ($role !=="learner" && $role !=="teacher"){
+       echo"<script>
+            showError(dropdown,'invalid role selected');
+          </script>";
+      exit();
+    }
 
-    if(!mysqli_query($con,$query)){
+    $query="INSERT INTO users_tbl (username, email, role, password) VALUES(?,?,?,?)";
+
+    $res=$con->prepare($query)->bind_param('ssss',$fields_data)->execute();
+
+    if($res !== true){
       $message="Error in registration";
     }
     else{
@@ -18,6 +40,7 @@
       exit();
     }
   }
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -136,7 +159,7 @@
 
             <div class="input-group">
                 <i class="fas fa-user-tag"></i>
-                <div id="dropdown">
+                <div id="register-dropdown">
                     <div id="selected" data-value="">Select Role</div>
                     <div class="options">
                         <div class="option" data-value="Learner" >Learner</div>
@@ -157,7 +180,7 @@
             <div class="input-group">
               <i class="fas fa-lock"></i>
               <input type="password" id="confirm-password" name="new_cnfpassword" placeholder="Confirm Password">
-              <span class="password-toggle" onclick="togglePassword('confirm-password', this)"><i
+              <span class="password-toggle" oncick="togglePassword('confirm-password', this)"><i
                   class="fas fa-eye"></i></span>
             </div>
 

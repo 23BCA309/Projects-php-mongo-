@@ -128,7 +128,7 @@ function submitRegister(event) {
     const email = document.getElementById('register-email').value.trim();
     const role = document.getElementById('selected').getAttribute('data-value');// Added role field
     const password = document.getElementById('register-password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
+    const confirmPassword = document.getElementById('register-confirm-password').value;
     const termsChecked = document.getElementById('terms').checked;
 
     clearErrorMessages();
@@ -152,7 +152,7 @@ function submitRegister(event) {
 
     // Role validation
     if (!role) {
-        showError('dropdown', 'Please select a role');
+        showError('register-dropdown', 'Please select a role');
         isValid = false;
     }
 
