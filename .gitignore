@@ -1,0 +1,45 @@
+# Large media files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+
+# Large image files (but allow small thumbnails)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+
+# But allow specific small files
+!php/content/tutorials/thumbnails/*.jpg
+!php/content/tutorials/thumbnails/*.png
+!php/content/tutorials/thumbnails/*.jpeg
+!php/content/tutorials/thumbnails/*.gif
+!php/content/tutorials/thumbnails/*.webp
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# PHP specific
+.env.local
+.env.production
+
+# Backup files
+*~
+*.bak
+*.backup
